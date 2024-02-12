@@ -1,0 +1,357 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url("fonts/TTLakes-Medium.woff") format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url("fonts/TTLakes-Regular.woff") format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url("fonts/TTLakes-Bold.woff") format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+    /* box-sizing: border-box; */
+}
+.menu-body{
+    font-family: 'TT Lakes', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: fixed;
+    width: 320px;
+    /* max-width: 320px;
+    min-height: 100%; */
+}
+
+.container {
+    /* position: fixed; */
+    max-width: 320px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    background-color: #FF3E79;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+
+
+    outline: 1px solid transparent;
+    outline-offset: 4px;
+    transition: transform .5s, outline-color .5s;
+
+}
+
+.btn:focus-visible {
+    outline-color: #FF3E79;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+.flash-btn {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 0px rgba(255, 62, 121, .4);
+}
+
+.flash-btn:after {
+    content: "";
+    background-color: white;
+    opacity: .02;
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: calc(50% - 10px);
+    top: calc(50% - 10px);
+    border-radius: 50%;
+    transform: scale(0);
+    pointer-events: none;
+    transition: transform .7s, opacity .3s;
+}
+
+.flash-btn:hover::after {
+    transform: scale(5);
+    opacity: .14;
+}
+
+.flash-btn:active {
+    transition: transform .3s, outline-color .3s, box-shadow .3s;
+    box-shadow: 0px 0px 0px 10px rgba(255, 62, 121, 0);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    color:#7E7E82;
+}
+
+
+/* header  */
+
+.menu-header__close {
+    /* background-color: #FF3E79; */
+    background-image: url("../img/true/close.svg");
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none; */
+}
+
+.menu-header__logo {
+    background-image: url("../img/true/logo.svg");
+    background-size: 97px 51px;
+    width: 100px;
+    height: 55px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.menu-header__search{
+    /* background-color: #FF3E79; */
+    background-image: url("../img/true/search.svg");
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none; */
+}
+
+.menu-header {
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-header__list {
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    align-items: center;
+    gap: 16px;
+}
+
+/* main  */
+
+.menu-main {
+    flex: 1 1 auto;
+    /* padding: 24px; */
+}
+
+.nav {
+    margin-left: 24px;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: -24px;
+}
+
+.nav__item {
+    /* padding-left: 24px; */
+}
+
+/* .highlight {
+    height: 24px;
+    width: 4px;
+    margin-left: -24px;
+} */
+
+/* .highlight {
+    width: 4px;
+    height: 32px;
+    border-radius: 20px 150px 150px 20px;
+    background-color: #41F6D7;
+    margin-left: -24px;
+} */
+
+.nav__link:active {
+    color: #7E7E82;
+}
+
+.nav__text {
+    margin-left: 24px;
+}
+
+.nav__item:active {
+    content: "";
+    width: 4px;
+    /* height: 30px; */
+    background-color: #41F6D7;
+    border-radius: 0px 10px 10px 0px;
+    white-space: nowrap;
+    
+}
+
+
+.nav__item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav__link {
+    margin: 0;
+    line-height: 24px;
+    color: #1B1C21;
+    font-family: "TT Lakes";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 142.857% */
+    letter-spacing: -0.2px;
+    text-decoration: none;
+}
+
+
+
+
+.menu-footer {
+    padding: 24px;
+}
+
+.icons {
+    margin-bottom: 16px;
+}
+
+.icons__call {
+    background-image: url("../img/true/call.svg");
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icons__chat {
+    background-image: url("../img/true/chat.svg");
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icons__profile {
+    background-image: url("../img/true/profile.svg");
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icons__list {
+    display: flex;
+    gap: 16px;
+}
+
+.contact__link {
+    margin-bottom: 16px;
+}
+
+.contact__link:hover {
+    color: #7E7E82;
+}
+
+.contact__email {
+    line-height: 24px;
+    color: #1B1C21;
+    font-family: "TT Lakes";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 142.857% */
+    letter-spacing: -0.2px;
+}
+
+.contact__number {
+    line-height: 32px;
+    color: #1B1C21;
+    font-family: "TT Lakes";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: -0.6px;
+}
+
+.lang__list {
+    display: flex;
+    gap: 5px;
+}
+
+.lang__radio {
+    line-height: 24px;
+    color: #1B1C21;
+    font-family: "TT Lakes";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 142.857% */
+    letter-spacing: -0.2px;
+
+}
+
+.lang__item input[type=radio] {
+	display: none;
+}
+
+input[type=radio]:checked + span {
+    color: #7E7E82;
+}
+
+.lang__radio:hover {
+    color: #7E7E82;
+}
+
+.active {
+}
+
+
+/* media  */
+
+@media (max-height: 730px) {
+    .nav__list {
+        gap: 20px;
+    }
+}
+
+@media (max-height: 609px) {
+    .nav__list {
+        gap: 5px;
+    }
+}
