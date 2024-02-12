@@ -176,7 +176,7 @@ html {
     /* padding: 24px; */
 }
 
-.nav {
+.nav--mrgl {
     margin-left: 24px;
 }
 
@@ -250,7 +250,7 @@ html {
     padding: 24px;
 }
 
-.icons {
+.icons--mrgb{
     margin-bottom: 16px;
 }
 
