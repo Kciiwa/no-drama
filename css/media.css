@@ -7,7 +7,7 @@
 
 
 @media (max-width: 768px) {
-    .info__extra {
+    .info__extra768px {
         display: none;
     }
 
@@ -21,7 +21,7 @@
         display: none;
     }
 
-    .page-title {
+    .page-title--margin {
         margin-left: 24px;
         margin-right: 24px;
     }
@@ -31,7 +31,7 @@
         margin-right: 24px;
     }
 
-    .info__about {
+    .info__about--margin {
         margin-left: 24px;
         margin-right: 24px;
     }
@@ -52,12 +52,12 @@
 }
 
 @media (max-width: 600px) {
-    .info__about {
+    .info__about--margin {
         margin-left: 16px;
         margin-right: 16px;
     }
 
-    .page-title {
+    .page-title--margin {
         margin-left: 16px;
         margin-right: 16px;
     }
@@ -89,6 +89,7 @@
 
     .icon-bar__divider {
         margin-right: auto;
+        /* margin-left: auto; */
     }
 
     .info__image-cps {
@@ -106,5 +107,52 @@
 
     .page-main {
         padding-top: 24px;
+    }
+
+}
+
+
+@media (max-height: 730px) {
+    .nav__list {
+        gap: 20px;
+    }
+}
+
+@media (max-height: 635px) {
+    .nav__list {
+        gap: 5px;
+    }
+}
+
+
+/* brands  */
+
+@media (max-width: 852px) {
+    .brand-list {
+        column-gap: 20px;
+    }
+}
+
+@media (max-width: 485px) {
+    .big-screen {
+        display: none;
+    }
+
+    .list-main {
+        padding: 0 16px;
+    }
+    
+    .list-header {
+        padding: 15px 16px;
+    }
+
+    .swiper-slide {
+        /* margin-right: 10px; */
+    }
+}
+
+@media (min-width: 485px) {
+    .mobile-screen {
+        display: none;
     }
 }

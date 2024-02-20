@@ -1,120 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/burger.css">
-    <title>Burger menu</title>
+    <meta name="keywords" content="услуги, сервисы, CPS">
+    <meta name="description" content="сервисный центр по ремонту техники Dell">
+    <title>Услуги и сервисы</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
-<body class="menu-body">
-    <div class="container">
-        <header class="menu-header">
-            <ul class="menu-header__list ul">
-                <!-- icon  -->
-                <li class="menu-header__item">
-                    <button class="btn flash-btn menu-header__close"></button>
+<body class="page-body">
+    <header class="page-header">
+        <!-- Icon bar -->
+        <section class="icon-bar">
+                <ul class="icon-bar__list">
+                    <li class="icon-bar__item">
+                        <!-- Burger -->
+                        <button class="btn flash-btn btn--burger"></button>
+                    </li>
+                    <li class="icon-bar__item">
+                    <!-- divider -->
+                        <div class="icon-bar__divider icon-bar__divider--display-none"></div>
+                    </li>
+                    <li class="icon-bar__item">
+                        <!-- logo -->
+                        <a href="mainPage.html" class="logo">
+                            <div class="menu-header__logo"></div>
+                        </a>
+                    </li>
+                </ul>
+            <ul class="icon-bar__list icon-bar__list--display-none icon-bar--margin-auto">
+                <li class="icon-bar__item">
+                    <!-- Call icon -->
+                    <button class="btn flash-btn btn--call"></button>
+                    
                 </li>
-                <!-- logo  -->
-                <li class="menu-header__item menu-header__item--rmargin-auto">
-                    <a  href="mainPage.html">
-                        <div class="menu-header__logo"></div>
-                    </a>
+                <li class="icon-bar__item">
+                    <!-- Chat icon-->
+                    <button class="btn flash-btn btn--chat"></button>
                 </li>
-                <!-- icon  -->
+                <li class="icon-bar__item">
+                    <!-- Profile icon -->
+                    <button class="btn flash-btn btn--profile"></button>
+                </li>
             </ul>
-            <!-- icon  -->
-            <div class="menu-header__item">
-                <button class="btn flash-btn menu-header__search"></button>
+            <!-- Divider  -->
+            <div class="icon-bar__divider"></div>
+            <ul class="icon-bar__list">
+                <li class="icon-bar__item">
+                    <!-- Repair icon -->
+                    <button class="btn flash-btn btn--repair"></button>
+                </li>
+                <li class="icon-bar__item">
+                    <!-- Checkstatus icon  -->
+                    <button class="btn flash-btn btn--checkstatus"></button>
+                </li>
+            </ul>
+        </section>
+    </header>
+    <main class="page-main">
+                <!-- Title of page + icons for desctop -->
+                <section class="page-title page-title--margin">
+                    <div class="page-title__title">
+                        <!-- Highlight  -->
+                        <div class="page-title__highlight"></div>
+                        <h1 class="page-title__text">Услуги и сервисы</h1>
+                    </div>
+                    <!-- Right side icons  -->
+                    <div class="title-icons">
+                        <ul class="title-icons__list">
+                            <li class="title-icons__item">
+                                <span class="title-icons__text">Оставить заявку</span>
+                                <!-- Repair icon -->
+                                <button class="btn flash-btn btn--repair"></button>
+                            </li>
+                            <li class="title-icons__item">
+                                <span class="title-icons__text">Статус ремонта</span>
+                                <!-- Checkstatus icon  -->
+                                <button class="btn flash-btn btn--checkstatus"></button>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- Navigation bar  -->
+                <nav class="nav-bar nav-bar--margin">
+                    <ul class="list">
+                        <li class="list__item">
+                            <a class="list__link active" href="">Ремонтируемые бренды</a>
+                        </li>
+                        <li class="list__item">
+                            <a class="list__link" href="">Дополнительные услуги</a>
+                        </li>
+                        <li class="list__item">
+                            <a class="list__link" href="">Цены на услуги</a>
+                        </li>
+                        <li class="list__item">
+                            <a class="list__link" href="">Адреса сервисных центров</a>
+                        </li>
+                        <li class="list__item">
+                            <a class="list__link" href="">Специальные цены</a>
+                        </li>
+                        <li class="list__item">
+                            <a class="list__link" href="">Отзывы</a>
+                        </li>
+                    </ul>
+                </nav>
+        <section class="info-container info-container--margin">
+            <div class="info">
+                <div class="info__about info__about--margin">
+                    <div class="info__text">
+                        <p class="info__paragraph">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                        <p class="info__paragraph info__extra320px">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, <span class="info__extra768px">что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
+                    </div>
+                    <div class="read-more">
+                        <div class="read-more__icon"></div>
+                        <button class="read-more__btn">Читать далее</button>
+                    </div>
+                </div>
+                <div class="info__image">
+                    <img class="info__image-cps" src="img/cps.png" alt="">
+                </div>
             </div>
-        </header>
-        <main class="menu-main">
-            <nav class="nav nav--mrgl">
-                <ul class="nav__list ul">
-                    <li class="nav__item">
-                        <!-- <div class="highlight"></div> -->
-                        <a href="" class="nav__link nav__link--active"><span class="nav__text">Ремонт техники</span></a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link"><span class="nav__text"></span>Услуги и сервисы</span></a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link"><span class="nav__text"></span>Корпоративным клиентам</span></a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link"><span class="nav__text"></span>Продавцам техники</span></a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link"><span class="nav__text"></span>Партнерам</span></a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link"><span class="nav__text"></span>Производители</span></a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link"><span class="nav__text"></span>Наши сервисные центры</span></a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link"><span class="nav__text"></span>Контакты</span></a>
-                    </li>
-                    <!-- <li class="menu-main__item">Услуги и сервисы</li>
-                    <li class="menu-main__item">Корпоративным клиентам</li>
-                    <li class="menu-main__item">Продавцам техники</li>
-                    <li class="menu-main__item">Партнерам</li>
-                    <li class="menu-main__item">Производителям</li>
-                    <li class="menu-main__item">Наши сервисные центры</li>
-                    <li class="menu-main__item">Контакты</li> -->
-                </ul>
-            </nav>
-
-        </main>
-        <footer class="menu-footer">
-            <section class="icons icons--mrgb">
-                <ul class="ul icons__list">
-                    <!-- icons  -->
-                    <li class="icons__item">
-                        <button class="btn flash-btn icons__call"></button>
-                    </li>
-                    <li class="icons__item">
-                        <button class="btn flash-btn icons__chat"></button>
-                    </li>
-                    <li class="icons__item">
-                        <button class="btn flash-btn icons__profile"></button>
-                    </li>
-                </ul>
-            </section>
-            <section class="contact">
-                <!-- email  -->
-                <div class="contact__link">
-                    <a class="link contact__email" href="mailto: mail@cps.com">mail@cps.com</a>
-                </div>
-                <!-- number  -->
-                <div class="contact__link">
-                    <a href="tel: 8 800 890 8900" class="link contact__number">8 800 890 8900</a>
-                </div>
-            </section>
-
-            <section class="lang">
-                <ul class="ul lang__list">
-                    <li class="lang__item">
-                        <label for="ru">
-                            <input type="radio" id="ru" name="lang" class="" checked></input>
-                            <span class="lang__radio">RU</span>
-                        </label>
-                    </li>
-                    <li class="lang__item">
-                        <label for="en">
-                            <input type="radio" id="en" name="lang" class=""></input>
-                            <span class="lang__radio">EN</span>
-                        </label>
-                    </li>
-                    <li class="lang__item">
-                        <label for="ch">
-                            <input type="radio" id="ch" name="lang" class=""></input>
-                            <span class="lang__radio">CH</span>
-                        </label>
-                    </li>
-                </ul>
-            </section>
-        </footer>
-    </div>
+        </section>
+    </main>
+    <footer></footer>
 </body>
 </html>
