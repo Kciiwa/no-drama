@@ -29,5 +29,5 @@ toggleButton.addEventListener('click', function() {
     
         // centeredSlides: true,
     
-        slidesPerView: 1.2
+        slidesPerView: 1.1
     });
