@@ -678,6 +678,27 @@
     background-size: 8px 12px;
     background-repeat: no-repeat;
     background-position: center;
+
+    transition-property: background-color, background-image, border-color, transform;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.brand-list__icon:hover {
+    background-color: #FF3E79;
+    border: 2px solid #fff;
+    background-image: url("../img/brands/whiteDropdown.svg");
+}
+
+.brand-list__icon:active {
+    background-color: #ff88ac;
+    border: 2px solid #fff;
+    transform: scale(0.95);
+    background-image: url("../img/brands/whiteDropdown.svg");
+}
+
+.read-more__btn:hover {
+    color: #7E7E82;
 }
 
 .hide {
