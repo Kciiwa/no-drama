@@ -134,25 +134,11 @@
 }
 
 @media (max-width: 485px) {
-    .big-screen {
-        display: none;
-    }
-
     .list-main {
         padding: 0 16px;
     }
     
     .list-header {
         padding: 15px 16px;
-    }
-
-    .swiper-slide {
-        /* margin-right: 10px; */
-    }
-}
-
-@media (min-width: 485px) {
-    .mobile-screen {
-        display: none;
     }
 }
